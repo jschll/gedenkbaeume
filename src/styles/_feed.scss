@@ -1,0 +1,55 @@
+@use "mixins" as *;
+
+.fm-gedenkbaum-feed {
+    display: flex;
+    flex-direction: column;
+    gap: var(--fm-feed-gap);
+
+    grid-column: span var(--fm-feed-col-span);
+
+    padding: var(--fm-feed-padding);
+
+    background-color: var(--fm-feed-bg);
+
+    border-radius: var(--fm-border-radius);
+
+    @include media-breakpoint-down(lg) {
+
+        --fm-feed-col-span: 12;
+
+        // padding-left: calc(var(--gutter) * 1.5);
+        // padding-right: calc(var(--gutter) * 1.5);
+
+        // margin-left: calc(var(--gutter) * -1);
+        // margin-right: calc(var(--gutter) * -1);
+    }
+
+    &-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &-title {
+            margin-bottom: 0;
+            font-family: serif;
+            font-size: var(--fm-feed-header-title-size);
+            line-height: calc(var(--fm-feed-header-title-size) * 1.2);
+            font-weight: var(--fm-feed-header-title-weight);
+            text-align: var(--fm-feed-header-title-align);
+            color: var(--fm-feed-header-title-color);
+
+        }
+
+        &-text {
+            padding: 0 var(--gutter);
+            font-size: var(--fm-feed-header-text-size);
+            line-height: calc(var(--fm-feed-header-text-size) * 1.2);
+            font-weight: var(--fm-feed-header-text-weight);
+            color: var(--fm-feed-header-text-color);
+        }
+
+        hr {
+            border-width: 2px;
+        }
+    }
+}

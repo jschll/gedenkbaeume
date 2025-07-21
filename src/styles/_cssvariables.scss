@@ -1,0 +1,139 @@
+:root {
+
+    // Utils
+
+    --gutter: 1.5rem;
+
+    // Farben
+
+    --fm-primary: #3a7864;
+    --fm-primary-tint: #91aca4;
+
+    // Schatten
+
+    --fm-shadow: rgba(150, 150, 150, 0.25) 0px 0px 10px 0px;
+
+    --fm-border-radius: 0px;
+
+    // Header
+
+    --fm-header-bg-color: #ffffff;
+    --fm-header-headline-color: var(--fm-primary);
+    --fm-header-subline-color: #666666;
+
+    --fm-header-headline-size: 2.75rem;
+    --fm-header-subline-size: 1.5rem;
+
+    --fm-header-headline-weight: 500;
+    --fm-header-subline-weight: 300;
+
+    // Grid 
+
+    --fm-grid-columns: 12;
+    --fm-grid-gap: var(--gutter);
+
+    // Feed 
+
+    --fm-feed-col-span: 8;
+    --fm-feed-gap: var(--gutter);
+    // --fm-feed-padding: var(--gutter);
+    --fm-feed-padding: 0;
+
+    // --fm-feed-bg: oklch(98.5% 0.002 247.839);
+    --fm-feed-bg: transparent;
+
+    --fm-feed-header-title-size: 1.25rem;
+    --fm-feed-header-title-weight: 500;
+    --fm-feed-header-title-align: center;
+    --fm-feed-header-title-color: #333;
+
+    --fm-feed-header-text-size: 1rem;
+    --fm-feed-header-text-weight: 400;
+    --fm-feed-header-text-color: #333333;
+
+    // Widgets
+
+    --fm-widgets-col-span: 4;
+    --fm-widgets-gap: var(--gutter);
+    // --fm-widgets-padding: var(--gutter);
+    --fm-widgets-padding: 0;
+
+    // --fm-widgets-bg: oklch(98.5% 0.002 247.839);
+    --fm-widgets-bg: transparent;
+
+    --fm-widgets-item-padding: var(--gutter);
+    --fm-widgets-item-bg: #ffffff;
+
+    --fm-widgets-item-title-size: 1.5rem;
+    --fm-widgets-item-title-weight: 500;
+    --fm-widgets-item-title-color: var(--fm-primary);
+
+    --fm-widgets-item-text-size: 1rem;
+    --fm-widgets-item-text-weight: 400;
+    --fm-widgets-item-text-color: #333;
+
+
+    // Gedenkbaum-Item
+
+    --fm-item-padding: var(--gutter);
+    --fm-item-gap: 1.5rem;
+    --fm-item-bg: #ffffff;
+
+    --fm-item-title-size: 1.5rem;
+    --fm-item-title-weight: 600;
+    --fm-item-title-color: var(--fm-primary);
+
+    --fm-item-kicker-size: 0.9rem;
+    --fm-item-kicker-weight: 300;
+    --fm-item-kicker-color: #666666;
+
+    --fm-item-text-size: 1rem;
+    --fm-item-text-weight: 400;
+    --fm-item-text-color: #666666;
+
+    --fm-item-time-size: 0.9rem;
+    --fm-item-time-weight: 300;
+    --fm-item-time-color: #666666;
+
+    --fm-image-container-ratio: 1/1;
+    --fm-image-container-max-w: 175px;
+    --fm-image-container-max-h: 175px;
+
+    --fm-item-share-size: 2.5rem;
+    --fm-item-share-offset: 0.5rem;
+    --fm-item-share-color: var(--fm-primary-tint);
+    --fm-item-share-icon-size: 1rem;
+    --fm-item-share-icon-color: #fff;
+
+    --fm-item-report-size: 2.5rem;
+    --fm-item-report-offset: 0.5rem;
+    --fm-item-report-color: transparent;
+    --fm-item-report-icon-size: 1rem;
+    --fm-item-report-icon-color: var(--fm-primary-tint);
+
+    // Aditional
+
+    --fm-aditional-padding: var(--gutter);
+    --fm-aditional-bg: #ffffff;
+
+    --fm-aditional-header-padding: var(--gutter);
+    --fm-aditional-header-bg: var(--fm-primary);
+
+    --fm-aditional-header-title-size: 1.5rem;
+    --fm-aditional-header-title-weight: 600;
+    --fm-aditional-header-title-color: #ffffff;
+
+    --fm-aditional-header-text-size: 1rem;
+    --fm-aditional-header-text-weight: 300;
+    --fm-aditional-header-text-color: #f8f8f8;
+
+    --fm-aditional-content-headline-margin-b: 0.5rem;
+    --fm-aditional-content-headline-size: 1.75rem;
+    --fm-aditional-content-headline-weight: 500;
+    --fm-aditional-content-headline-color: var(--fm-primary);
+
+    --fm-aditional-content-text-size: 1rem;
+    --fm-aditional-content-text-weight: 400;
+    --fm-aditional-content-text-color: #333333;
+
+}

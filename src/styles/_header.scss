@@ -1,0 +1,44 @@
+@use "mixins" as *;
+
+.fm-gedenkbaum-header {
+    margin-bottom: var(--gutter);
+    padding: var(--gutter);
+    background-color: var(--fm-header-bg-color);
+    border-radius: var(--fm-border-radius);
+
+    // @include media-breakpoint-down(md) {
+
+    //     padding-left: calc(var(--gutter) * 1.5);
+    //     padding-right: calc(var(--gutter) * 1.5);
+
+    //     margin-left: calc(var(--gutter) * -1);
+    //     margin-right: calc(var(--gutter) * -1);
+    // }
+
+    &-headline {
+
+        font-size: var(--fm-header-headline-size);
+        font-weight: var(--fm-header-headline-weight);
+        line-height: calc(var(--fm-header-headline-size) * 1.2);
+
+        color: var(--fm-header-headline-color);
+    }
+
+    &-subline {
+        margin-bottom: 1rem;
+
+        font-size: var(--fm-header-subline-size);
+        font-weight: var(--fm-header-subline-weight);
+
+        color: var(--fm-header-subline-color);
+    }
+
+    &-cta {
+        display: flex;
+        gap: 0.5rem;
+
+        @include media-breakpoint-down(md) {
+            flex-wrap: wrap;
+        }
+    }
+}

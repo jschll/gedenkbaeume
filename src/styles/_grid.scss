@@ -1,0 +1,10 @@
+@use "mixins" as *;
+
+.fm-gedenkbaum-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--fm-grid-columns), minmax(0, 1fr));
+    gap: var(--fm-grid-gap);
+
+    margin-bottom: 2rem;
+
+}

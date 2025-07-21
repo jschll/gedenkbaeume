@@ -1,0 +1,66 @@
+@use "mixins" as *;
+
+.fm-gedenkbaum-aditional {
+    position: relative;
+    padding: var(--fm-aditional-padding);
+    overflow: clip;
+    background-color: var(--fm-aditional-bg);
+
+    border-radius: var(--fm-border-radius);
+
+    &:after {
+        position: absolute;
+        z-index: 1;
+        content: "";
+        inset: 0;
+        background-image: url("/forestSilhuette.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.05;
+    }
+
+    // @include media-breakpoint-down(md) {
+    //     padding-left: calc(var(--gutter) * 1.5);
+    //     padding-right: calc(var(--gutter) * 1.5);
+
+    //     margin-left: calc(var(--gutter) * -1);
+    //     margin-right: calc(var(--gutter) * -1);
+    // }
+
+    &-header {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 2rem;
+        padding: var(--fm-aditional-header-padding);
+        background-color: var(--fm-aditional-header-bg);
+
+        border-radius: var(--fm-border-radius);
+
+        &-title {
+            font-size: var(--fm-aditional-header-title-size);
+            font-weight: var(--fm-aditional-header-title-weight);
+            color: var(--fm-aditional-header-title-color);
+        }
+
+        &-text {
+            margin: 0;
+            font-size: var(--fm-aditional-header-text-size);
+            font-weight: var(--fm-aditional-header-text-weight);
+            color: var(--fm-aditional-header-text-color);
+        }
+    }
+
+    &-content {
+        position: relative;
+        z-index: 2;
+
+        &-headline {
+            margin-bottom: var(--fm-aditional-content-headline-margin-b);
+
+            font-size: var(--fm-aditional-content-headline-size);
+            font-weight: var(--fm-aditional-content-headline-weight);
+            color: var(--fm-aditional-content-headline-color);
+        }
+    }
+}

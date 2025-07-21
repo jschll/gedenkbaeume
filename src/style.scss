@@ -1,0 +1,21 @@
+@use "styles/cssvariables";
+
+@use "styles/header";
+@use "styles/grid";
+@use "styles/feed";
+@use "styles/items";
+@use "styles/widgets";
+@use "styles/aditional";
+
+// Bootstrap
+
+$primary: #3a7864;
+
+@import "bootstrap/scss/bootstrap";
+
+
+body {
+    font-family: system-ui;
+    background-color: #f1f1f1;
+}
+
